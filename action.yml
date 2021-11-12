@@ -4,6 +4,10 @@ branding:
   icon: 'zap'
   color: 'blue'
 inputs:
+  generate_report_dir:
+    description: 'The Path contain reports'
+    required: true
+    default: ${{ github.workspace }}
   token:
     description: 'GitHub Token to create issues in the repository'
     required: false

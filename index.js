@@ -11,7 +11,7 @@ let htmlReportName = 'report_html.html';
 async function run() {
 
     try {
-        let workspace = process.env.GENERATE_REPORT_DIR;
+        let workspace = core.getInput('generate_report_dir');
         let currentRunnerID = process.env.GITHUB_RUN_ID;
         let repoName = process.env.GITHUB_REPOSITORY;
         let token = core.getInput('token');
